@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="quiz__header">
@@ -15,86 +16,86 @@
         <p class="quiz__header__desc">나는 진짜 MZ 일까요?</p>
     </header>
 <main class="quiz__main">
-    <section class="quiz__home">
+    <section class="quiz__home active">
         <img class="quiz__home__img" src="./img/horse.png" alt="latte's horse">
         <p class="quiz__home__desc">나는 mz들이 주로 사용하는 밈을 얼마나 알고 있을까요?</p>
         <button class="btn--start" type="button">시작하기</button>
     </section class="quiz__home">
     <ol class="quiz__list">
-        <li class="quiz__item">
+        <li class="quiz__item active">
             <h2 class="quiz__item__title">1번 문항입니다.</h2>
             <p class="quiz__item__quiz">오히려 ㅁㅁ</p>
             <input class="quiz__item__input" type="text">
             <p class="quiz__item__desc">위 빈칸에 알맞은 말을 적어주세요.</p>
         </li>
-        <li class="quiz__item">
+        <li class="quiz__item active">
             <h2 class="quiz__item__title">2번 문항입니다.</h2>
             <p class="quiz__item__quiz">머선ㅁㅁㅁ</p>
             <input class="quiz__item__input" type="text">
             <p class="quiz__item__desc">위 빈칸에 알맞은 말을 적어주세요.</p>
         </li>
-        <li class="quiz__item">
+        <li class="quiz__item active">
             <h2 class="quiz__item__title">3번 문항입니다.</h2>
             <p class="quiz__item__quiz">알잘딱ㅁㅁ</p>
             <input class="quiz__item__input" type="text">
             <p class="quiz__item__desc">위 빈칸에 알맞은 말을 적어주세요.</p>
         </li>
-        <li class="quiz__item">
+        <li class="quiz__item active">
             <h2 class="quiz__item__title">4번 문항입니다.</h2>
             <p class="quiz__item__quiz">어쩔 ㅁㅁ</p>
             <input class="quiz__item__input" type="text">
             <p class="quiz__item__desc">위 빈칸에 알맞은 말을 적어주세요.</p>
         </li>
-        <li class="quiz__item">
+        <li class="quiz__item active">
             <h2 class="quiz__item__title">5번 문항입니다.</h2>
             <p class="quiz__item__quiz">저메추</p>
             <input class="quiz__item__input" type="text">
             <p class="quiz__item__desc">위 단어의 의미는?</p>
         </li>
-        <li class="quiz__item">
+        <li class="quiz__item active">
             <h2 class="quiz__item__title">6번 문항입니다.</h2>
             <p class="quiz__item__quiz">700</p>
             <input class="quiz__item__input" type="text">
             <p class="quiz__item__desc">위 단어의 의미는?</p>
         </li>
-        <li class="quiz__item">
+        <li class="quiz__item active">
             <h2 class="quiz__item__title">7번 문항입니다.</h2>
             <p class="quiz__item__quiz">(화날때) ㅁ받네</p>
             <input class="quiz__item__input" type="text">
             <p class="quiz__item__desc">위 빈칸에 알맞은 말을 적어주세요.</p>
         </li>
-        <li class="quiz__item">
+        <li class="quiz__item active">
             <h2 class="quiz__item__title">8번 문항입니다.</h2>
             <p class="quiz__item__quiz">좋댓ㅁㅁ</p>
             <input class="quiz__item__input" type="text">
             <p class="quiz__item__desc">위 빈칸에 알맞은 말을 적어주세요.</p>
         </li>
-        <li class="quiz__item">
+        <li class="quiz__item active">
             <h2 class="quiz__item__title">9번 문항입니다.</h2>
             <p class="quiz__item__quiz">억텐</p>
             <input class="quiz__item__input" type="text">
             <p class="quiz__item__desc">위 단어의 줄이지 않은 말은?</p>
         </li>
-        <li class="quiz__item">
+        <li class="quiz__item active">
             <h2 class="quiz__item__title">10번 문항입니다.</h2>
             <p class="quiz__item__quiz">당모치</p>
             <input class="quiz__item__input" type="text">
             <p class="quiz__item__desc">위 단어의 줄이지 않은 말은?</p>
         </li>
     </ol>
-    <button class="btn--next">다음</button>
+    <button class="btn--next active">다음</button>
     <section class="quiz__result">
         <div class="result--first">
             <h1 result="result__title">10 문제중 1문제를 맞히셨네요!</h1>
         <img class="result__img" src="./img/fossil.jpeg" alt=fossil">
         <p class="result__desc">당신은 화석인가요?</p>
         </div>
-        <div class="result--first">
+        <div class="result--second active">
             <h1 result="result__title">10 문제중 4문제를 맞히셨네요!</h1>
         <img class="result__img" src="./img/result--second.png" alt=fossil">
         <p class="result__desc">나는 진짜 MZ 일까???</p>
         </div>
-        <div class="result--first">
+        <div class="result--third active">
             <h1 result="result__title">10 문제중 8문제를 맞히셨네요!</h1>
         <img class="result__img" src="./img/result--third.png" alt=fossil">
         <p class="result__desc">당신은 MZ중에 진짜 MZ입니다! </p>
