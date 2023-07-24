@@ -136,7 +136,7 @@ body {
 /* result */
 .quiz__result {
     width: 600px;
-    height: 600px;
+    height: 450px;
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
