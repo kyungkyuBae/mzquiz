@@ -9,7 +9,8 @@
 
 }
 
-li , ol {
+
+li , ol , a {
     text-decoration: none;
     list-style: none;
     margin: 0;
@@ -48,8 +49,8 @@ body {
 }
 
 .quiz__home {
-    height: 100%;
-    width: 100%;
+    height: 460px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     background-color: var(--background-color);
@@ -74,25 +75,35 @@ body {
     font-weight: 700;
     margin-bottom: 20px;
 }
-/* quiz__list */
+/* quiz__form */
+
+.quiz__form {
+    background-color: var(--background-color);
+    width: 600px;
+    height: 450px;
+    border: 1px solid silver;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 .quiz__item {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: var(--background-color);
     width: 600px;
     height: 450px;
-    border: 1px solid silver;
     justify-content: space-evenly;
     align-items: center;
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .quiz__item__quiz {
     color: var(--textcolor--accent);
     font-weight: 900;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .quiz__item__input {
@@ -102,18 +113,20 @@ body {
 
 /* btn--next */
 .btn--next{
-    background-color: rgb(239, 241, 243);
+    background-color: rgb(198, 228, 187);
     width: 100px;
-    height: 200px;
+    height: 50px;
     border-radius: 20px;
     border: 0;
     color: var(--textcolor--accent);
     font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
-    padding: 8px 15px;
+    padding: 15px 15px;
     position: relative;
-    top: -50px;
+    top: -40px;
+
+    
 }
 
 .btn--next:hover{
@@ -137,10 +150,26 @@ body {
     color: var(--textcolor--accent);
 }
 .result__img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 
+.btn--restore {
+    background-color: rgb(198, 228, 187);
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    border: 0;
+    color: var(--textcolor--accent);
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.btn--restore > a {
+    padding: 15px 15px;
+}
 /* active */
 .active{
     display: none;
