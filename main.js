@@ -11,6 +11,7 @@ function nextPage () {
     home.classList.add('active');
     quizForm.classList.remove('active');
     quizs[0].classList.remove('active');
+    results[0].focus();
 }
 startBtn.addEventListener('click',nextPage);
 
@@ -26,18 +27,22 @@ const resultThird = document.querySelector('.result--third');
 const resultTitles = document.querySelectorAll('.result__title');
 
 nextBtn.addEventListener('click',()=>{
-    if (results[NEXT_COUNT].value === ANSWERS[NEXT_COUNT]){
+    let result = results[NEXT_COUNT].value
+    for (i=0; i < result.length; i++){
+        result = result.replace(/ /gi,'')
+    }
+    if (result === ANSWERS[NEXT_COUNT]){
         SCORE++;
     }
     if (NEXT_COUNT < 10 ){
         quizs[NEXT_COUNT].classList.add('active');
     if (NEXT_COUNT < 9){
         quizs[NEXT_COUNT+1].classList.remove('active');
+        results.forEach(e=>{e.focus()})
     }
     NEXT_COUNT++;
     }
 
-    resultTitles[2].innertext = '233'
     if (NEXT_COUNT === 10){
         nextBtn.classList.add('active');
         resultForm.classList.remove('active');
@@ -55,4 +60,13 @@ nextBtn.addEventListener('click',()=>{
             resultTitles[0].innerHTML = `<div>10문제 중 ${SCORE} 문제를 맞히셨네요!</div>`
         }
     }
+})
+
+// input 에서 enter시 next로 넘어가기 구현
+results.forEach(input=>{
+    input.addEventListener('keydown',(e)=>{
+        if(e.keyCode === 13){
+            nextBtn.click()
+        }
+    })
 })
